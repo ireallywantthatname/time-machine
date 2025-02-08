@@ -578,9 +578,6 @@
   .sticky {
     position: sticky;
   }
-  .inset-x-0 {
-    inset-inline: calc(var(--spacing) * 0);
-  }
   .end-1 {
     inset-inline-end: calc(var(--spacing) * 1);
   }
@@ -728,8 +725,17 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
@@ -821,15 +827,8 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .size-32 {
-    width: calc(var(--spacing) * 32);
-    height: calc(var(--spacing) * 32);
-  }
   .h-8 {
     height: calc(var(--spacing) * 8);
-  }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
@@ -1124,9 +1123,6 @@
   }
   .auto-rows-min {
     grid-auto-rows: min-content;
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-none {
     grid-template-columns: none;
@@ -1767,9 +1763,6 @@
   .align-top {
     vertical-align: top;
   }
-  .font-\[\'\'\] {
-    font-family: '';
-  }
   .font-\[\'MedievalSharp\'\] {
     font-family: 'MedievalSharp';
   }
@@ -1900,9 +1893,6 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
-  }
-  .text-gray-500 {
-    color: var(--color-gray-500);
   }
   .text-pink-50 {
     color: var(--color-pink-50);
@@ -2409,13 +2399,6 @@
       }
     }
   }
-  .hover\:underline {
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-line: underline;
-      }
-    }
-  }
   .focus\:outline-none {
     &:focus {
       --tw-outline-style: none;
@@ -2471,11 +2454,6 @@
   .sm\:p-6 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 6);
-    }
-  }
-  .sm\:text-center {
-    @media (width >= 40rem) {
-      text-align: center;
     }
   }
   .md\:order-2 {
@@ -2604,11 +2582,6 @@
       :where(& > :not(:last-child)) {
         --tw-space-x-reverse: 1;
       }
-    }
-  }
-  .dark\:text-gray-400 {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-gray-400);
     }
   }
 }
