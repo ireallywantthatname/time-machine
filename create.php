@@ -1,4 +1,5 @@
 <?php
+$page_title = "Add new page | Time Portal";
 include 'includes/config.php';
 include_once 'includes/header.inc.php';
 

@@ -1,4 +1,6 @@
 <?php
+
+$page_title = "Home | Time Portal";
 include 'includes/config.php';
 include_once 'includes/header.inc.php';
 $result = $db->query("SELECT id, title FROM pages");
